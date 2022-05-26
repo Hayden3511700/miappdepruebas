@@ -1,268 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>Jeff</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a7dff68cee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Pagína Jeff</title>
 </head>
-
 <body>
+    <header>
+        <div class="container">
+            <nav class="nav_checkbox">
+                <img src="img/Logo.png" alt="logo" class="logo">
 
-  <!-- ======================= -->
-  <!-- Encabezado -->
-  <!-- ======================= -->
+                <input type="checkbox" id="tab-nav" class="tab-nav">
+                <label for="tab-nav" class="label">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </label>
 
-  <header class="container-fluid bg-primary d-flex justify-content-center">
-    <p class="text-light mb-0 p-2 fs-6">Contactanos 63-30-75-45</p>
-  </header>
+                <ul class="content_nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="correo.html">Contacto</a></li>
+                    <li><a href="#">Sobre mi</a></li>
+                </ul>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <span class="text-primary fs-5 fw-bold">Pagína Jeff</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Equipo</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-
-        <form class="d-flex">
-          <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
-          <button class="btn btn-primary-outline-success btn-primary" type="button">Suscribete</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ======================= -->
-  <!-- SLIDER DE IMAGENES -->
-  <!-- ======================= -->
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000">
-        <img src="./img/slide1.jpg" class="d-block w-100" alt="slide1">
-      </div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./img/slide2.jpg" class="d-block w-100" alt="slide2">
-      </div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./img/slide3.jpg" class="d-block w-100" alt="slide3">
-      </div>
-
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!-- ======================= -->
-  <!-- INTRODUCCION A SERVICIOS-->
-  <!-- ======================= -->
-
-  <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 mx-auto"
-    id="intro">
-    <h1 class="p-3 fs-2 border-top border-3">Una agencia única para todas tus necesidades de <span
-        class="text-primary">Marketing Digital<span /></h1>
-    <p class="p-3  fs-4">
-      <span class="text-primary">Pagína Jeff</span> es la agencia donde te ayudamos establecer tu presencia online. SEO,
-      paginas WEB, tiendas virtuales, redes sociales
-    </p>
-  </section>
-
-  <!--========================================================== -->
-  <!-- TIPOS DE SERVICIOS-->
-  <!--========================================================== -->
-
-  <section class="w-100">
-    <div class="row w-75 mx-auto" id="servicios-fila-1">
-      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-        <img src="./img/desarrollo.png" alt="desarrollo" width="180" height="160">
-
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Desarrollo</h3>
-          <p class="px-4">Desarrollo de aplicaciones WEB, moviles y ecommerce</p>
+            </nav>
         </div>
+        <hr style="color: white">
+    </header>
 
-      </div>
-
-      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
-        <img src="./img/concepto.png" alt="concepto" width="180" height="160">
-
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Branding</h3>
-          <p class="px-4">Diseño, Conceptualización e Implementación de productos digitales</p>
+    <section class="content_section">
+        <div class="usuario">
+            <label id="usuario" style="color:white;"></label>
         </div>
-      </div>
+        <div class="info-content">
+        <h3>Desarrollador</h3>
+        <h1>Jeferson Segura</h1>
+        <p>La colaboración y la comunicación son parte integral de mi trabajo, disfruto resolver problemas y entregar los mejores resultados.</p>
+        <button class="btn">Leer más</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="main">
+        <div class="accounts">
+            <i class="fab fa-twitter twitter margin_logo"></i>
+            <i class="fab fa-facebook-f facebook margin_logo"></i>
+            <i class="fab fa-instagram instagram margin_logo"></i>
+        </div>
     </div>
+    <hr class="hr">
+    <p class="copyrigth">Todos los derechos reservados</p>
+    </footer>
 
-    <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
-      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
-        <img src="./img/comunicaciones.png" alt="comunicaciones" width="180" height="160">
-
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Comunicaciones</h3>
-          <p class="px-4">Desarrollo del plan de comunicaciones para sus clientes.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-        <img src="./img/seo.png" alt="seo" width="180" height="160">
-
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">SEO</h3>
-          <p class="px-4">Analizamos la eficiencia y optimizamos los sitios WEB</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--========================================================== -->
-  <!-- SECCION ACERCA DE NOSOTROS-->
-  <!--========================================================== -->
-
-  <section>
-    <div class="container w-50 m-auto text-center" id="equipo">
-      <h1 class="mb-5 fs-2">Equipo pequeño con <span class="text-primary">resultados Grandes</span>.</h1>
-      <p class="fs-4 ">Siempre buscamos las personas adecuadas para que trabajen con nosotros. Si te sientes listo para
-        este reto, te esperamos para que te unas a nosotros.</p>
-    </div>
-
-    <div class="mt-5 text-center">
-      <img id="img-equipo" src="./img/equipo.jpg" alt="equipo">
-    </div>
-
-    <div id="local" class="border-top border-2">
-      <div class="mapa"> </div>
-      <div>
-        <div class="wrapper-local">
-          <h2>Ubicado en Miami, Florida</h2>
-          <h2 class="text-primary mb-4" id="typewriter"></h2>
-          <p class="fs-5 text-body">Elijimos Miami para nuestra oficina con el objetivo de estar cerca a nuestros
-            clientes. Estamos ubicados en Brickell, el corazon y el centro financiero de Miami, cerca de los mejores
-            restaurantes, tiendas y tan solo 15 minutos de las playas. ¡Visitennos y no se arrepentiran!</p>
-          <section class="d-flex justify-content-start" id="numeros-local">
-            <div>
-              <p class="text-primary fs-5">200</p>
-              <p>Dias de Sol</p>
-            </div>
-            <div>
-              <p class="text-primary fs-5">100%</p>
-              <p>Aprobado</p>
-            </div>
-            <div>
-              <p class="text-primary fs-5">24 °C</p>
-              <p>Temperatura</p>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
-  <!--========================================================== -->
-  <!-- SECCION CONTACTOS-->
-  <!--========================================================== -->
-
-  <section id="seccion-contacto" class="border-bottom border-secondary border-2">
-    <div id="bg-contactos">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#1b2a4e" fill-opacity="1"
-          d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
-        </path>
-      </svg>
-    </div>
-
-
-    <!--========================================================== -->
-    <!-- CONTENEDOR DEL FORMULARIO -->
-    <!--========================================================== -->
-
-    <div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
-      <div class="text-center mb-4" id="titulo-formulario">
-        <div><img src="./img/support.png" alt="" class="img-fluid ps-5"></div>
-        <h2>Contactanos</h2>
-        <p class="fs-5">Estamos aqui para hacer realidad de tus proyectos</p>
-      </div>
-
-
-
-      <form method="POST" data-netlify="true" action="#">
-        <div class="mb-3">
-          <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
-        </div>
-
-
-        <div class="mb-3">
-          <input type="input" class="form-control" id="name" name="name" placeholder="John Doe">
-        </div>
-
-
-        <div class="mb-3">
-          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
-        </div>
-
-        <div class="mb-3">
-          <textarea class="form-control" name="message" id="message" rows="4"></textarea>
-        </div>
-
-        <div class="mb-3">
-          <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
-        </div>
-      </form>
-
-    </div>
-  </section>
-
-
-  <!--========================================================== -->
-  <!--FOOTER-->
-  <!--========================================================== -->
-
-  <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
-    <p class="fs-5 px-3  pt-3">ExpertD. &copy; Todos Los Derechos Reservados 2021</p>
-    <div id="iconos">
-      <a href="#"><i class="bi bi-facebook"></i></a>
-      <a href="#"><i class="bi bi-twitter"></i></a>
-      <a href="#"><i class="bi bi-instagram"></i></a>
-    </div>
-  </footer>
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="js/saludo.js"></script>
 </body>
-
 </html>
